@@ -65,12 +65,12 @@ pub fn secret_entrance() -> Result<(), Box<dyn Error>> {
     }
 
     println!(
-        "The password fpr the first part of the problem is: {:?}",
+        "The password for the first part of the problem is: {:?}",
         dial.part_one_zeros
     );
 
     println!(
-        "The password fpr the second part of the problem is: {:?}",
+        "The password for the second part of the problem is: {:?}",
         dial.part_two_zeros
     );
 
