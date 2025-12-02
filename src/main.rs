@@ -9,6 +9,8 @@ fn main() -> Result<(), Box<dyn Error>> {
     println!(
         "Please, input a number ranging from 1 to 12, each number represents each day of the challenge:"
     );
+    println!("1: --- Day 1: Secret Entrance --- (https://adventofcode.com/2025/day/1)");
+    println!("2: --- Day 2: Gift Shop ---       (https://adventofcode.com/2025/day/2)");
 
     let input: u8 = read_input()?;
 
