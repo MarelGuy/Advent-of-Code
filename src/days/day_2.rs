@@ -26,6 +26,9 @@ pub fn gift_shop() -> Result<(), Box<dyn Error>> {
 
             if split_i_string.0 == split_i_string.1 {
                 result_first_part += i;
+                result_second_part += i;
+
+                continue;
             }
 
             for j in 1..=cap {
@@ -46,8 +49,8 @@ pub fn gift_shop() -> Result<(), Box<dyn Error>> {
         }
     }
 
-    println!("The result for the first part of the problem is: {result_first_part:?}");
-    println!("The result for the second part of the problem is: {result_second_part:?}");
+    println!("The result for the first part of the problem is: {result_first_part}");
+    println!("The result for the second part of the problem is: {result_second_part}");
 
     Ok(())
 }
