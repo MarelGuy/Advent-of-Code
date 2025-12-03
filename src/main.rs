@@ -1,6 +1,9 @@
 mod days;
 
-use std::{error::Error, io};
+use std::{
+    error::Error,
+    io::{self, Write},
+};
 
 fn main() -> Result<(), Box<dyn Error>> {
     println!(
@@ -11,12 +14,18 @@ fn main() -> Result<(), Box<dyn Error>> {
     );
     println!("1: --- Day 1: Secret Entrance --- (https://adventofcode.com/2025/day/1)");
     println!("2: --- Day 2: Gift Shop ---       (https://adventofcode.com/2025/day/2)");
+    println!("3: --- Day 3: Lobby ---           (https://adventofcode.com/2025/day/3)");
+
+    print!("> ");
+
+    io::stdout().flush()?;
 
     let input: u8 = read_input()?;
 
     match input {
         1 => days::secret_entrance()?,
         2 => days::gift_shop()?,
+        3 => days::lobby()?,
         _ => println!("This day is not yet implemented, please try again"),
     }
 
