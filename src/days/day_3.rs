@@ -1,7 +1,7 @@
 #![allow(clippy::similar_names)]
 // Day 3: Lobby
 
-use std::{collections::VecDeque, error::Error};
+use std::error::Error;
 
 const DAY_DATA: &str = include_str!("../../inputs/day_3");
 
@@ -29,13 +29,11 @@ fn find_max_sequence(input: &str, k: usize) -> Result<usize, Box<dyn Error>> {
 
     let result_string: String = stack.iter().collect();
 
-    println!("{result_string}");
-
     Ok(result_string.parse::<usize>()?)
 }
 
 pub fn lobby() -> Result<(), Box<dyn Error>> {
-    let data: VecDeque<&str> = DAY_DATA.split('\n').collect();
+    let data: Vec<&str> = DAY_DATA.split('\n').collect();
 
     let mut total_joltage_2: usize = 0;
     let mut total_joltage_12: usize = 0;
