@@ -27,7 +27,7 @@ fn main() -> Result<(), Box<dyn Error>> {
         1 => days::secret_entrance()?,
         2 => days::gift_shop()?,
         3 => days::lobby()?,
-        4 => days::printing_department()?,
+        4 => days::printing_department(),
         _ => println!("This day is not yet implemented, please try again"),
     }
 
