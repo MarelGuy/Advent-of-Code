@@ -12,9 +12,10 @@ fn main() -> Result<(), Box<dyn Error>> {
     println!(
         "Please, input a number ranging from 1 to 12, each number represents each day of the challenge:"
     );
-    println!("1: --- Day 1: Secret Entrance --- (https://adventofcode.com/2025/day/1)");
-    println!("2: --- Day 2: Gift Shop ---       (https://adventofcode.com/2025/day/2)");
-    println!("3: --- Day 3: Lobby ---           (https://adventofcode.com/2025/day/3)");
+    println!("1: --- Day 1: Secret Entrance ---     (https://adventofcode.com/2025/day/1)");
+    println!("2: --- Day 2: Gift Shop ---           (https://adventofcode.com/2025/day/2)");
+    println!("3: --- Day 3: Lobby ---               (https://adventofcode.com/2025/day/3)");
+    println!("4: --- Day 4: Printing Department --- (https://adventofcode.com/2025/day/4)");
 
     print!("> ");
 
@@ -26,6 +27,7 @@ fn main() -> Result<(), Box<dyn Error>> {
         1 => days::secret_entrance()?,
         2 => days::gift_shop()?,
         3 => days::lobby()?,
+        4 => days::printing_department()?,
         _ => println!("This day is not yet implemented, please try again"),
     }
 
