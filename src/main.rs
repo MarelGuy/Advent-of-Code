@@ -16,6 +16,7 @@ fn main() -> Result<(), Box<dyn Error>> {
     println!("2: --- Day 2: Gift Shop ---           (https://adventofcode.com/2025/day/2)");
     println!("3: --- Day 3: Lobby ---               (https://adventofcode.com/2025/day/3)");
     println!("4: --- Day 4: Printing Department --- (https://adventofcode.com/2025/day/4)");
+    println!("5: --- Day 5: Cafeteria ---           (https://adventofcode.com/2025/day/5)");
 
     print!("> ");
 
@@ -28,6 +29,7 @@ fn main() -> Result<(), Box<dyn Error>> {
         2 => days::gift_shop()?,
         3 => days::lobby()?,
         4 => days::printing_department(),
+        5 => days::cafeteria()?,
         _ => println!("This day is not yet implemented, please try again"),
     }
 
